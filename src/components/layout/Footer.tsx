@@ -30,13 +30,13 @@ export function Footer({ brand, description, links, note, locale, actionLinks }:
           <div
             className={joinClasses(
               'footer-main',
-              locale === 'ar' ? 'footer-main--brand-left' : 'footer-main--brand-right',
+              'footer-main--brand-right',
             )}
           >
             <div
               className={joinClasses(
                 'footer-brand',
-                locale === 'ar' ? 'footer-brand--brand-left' : 'footer-brand--brand-right',
+                'footer-brand--brand-right',
               )}
               dir={locale === 'ar' ? 'rtl' : 'ltr'}
             >
@@ -44,7 +44,7 @@ export function Footer({ brand, description, links, note, locale, actionLinks }:
                 aria-label={brand.name}
                 className={joinClasses(
                   'header-brand',
-                  locale === 'ar' ? 'footer-brand__logo--left' : 'footer-brand__logo--right',
+                  'footer-brand__logo--right',
                 )}
                 href="/"
               >
