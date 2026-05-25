@@ -39,7 +39,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   `;
 
   return (
-    <html dir={content.direction} lang={content.locale}>
+    <html data-scroll-behavior="smooth" dir={content.direction} lang={content.locale}>
       <body
         className={cairo.variable}
         style={{

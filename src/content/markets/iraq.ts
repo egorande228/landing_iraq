@@ -1,16 +1,20 @@
 import type { MarketContent } from '@/content/markets/types';
 import { getLocaleDirection, type Locale } from '@/lib/i18n';
 
+const sportsLink = 'https://refpa3665.com/L?tag=d_4092175m_66329c_IRAQSport';
+const casinoBonusLink = 'https://refpa3665.com/L?tag=d_4092175m_66329c_MLBIRAQ26';
+const telegramLink = 'https://t.me/Team_cash_iraq';
+const emailLink = 'mailto:PAYPARTNERS-MIDDLEAST@MELBET.COM';
+
 const messagingChannels = {
   telegram: {
-    href: '#',
+    href: telegramLink,
     iconSrc: '/telegram.png',
     platform: 'telegram' as const,
   },
-  whatsapp: {
-    href: '#',
-    iconSrc: '/whatsapp.png',
-    platform: 'whatsapp' as const,
+  email: {
+    href: emailLink,
+    platform: 'email' as const,
   },
 };
 
@@ -82,11 +86,13 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           'ابدأ بمباريات اليوم، جرّب ألعاب الكازينو، واستفد من الهدايا التي ترفع أول جلسة لعب. التسجيل سريع، والتنقل بين الرياضة والكازينو والعروض يتم بخطوات قليلة من الهاتف.',
         primaryCta: {
           label: 'ابدأ من الرياضة',
-          href: '#sports',
+          href: sportsLink,
+          external: true,
         },
         secondaryCta: {
           label: 'اكتشف الكازينو',
-          href: '#casino',
+          href: casinoBonusLink,
+          external: true,
         },
         highlights: ['هدايا', 'لفات مجانية', 'رهانات مجانية', 'مكافأة أول إيداع حتى 200%'],
         stats: [
@@ -328,11 +334,13 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           'ابدأ من الرياضة إذا كنت تبحث عن طاقة يوم المباراة، أو انتقل إلى الكازينو إذا كنت تريد جلسات أسرع، أو راجع العروض قبل أول خطوة.',
         primaryCta: {
           label: 'اذهب إلى الرياضة',
-          href: '#sports',
+          href: sportsLink,
+          external: true,
         },
         secondaryCta: {
           label: 'راجع العروض',
-          href: '#offers',
+          href: casinoBonusLink,
+          external: true,
         },
       },
     },
@@ -552,7 +560,7 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
         title: 'إذا كنت جاهزاً للشراكة أو الوكالة، اختر قناتك وابدأ مباشرة.',
         highlightPhrases: ['الشراكة', 'الوكالة', 'ابدأ'],
         description:
-          'أرسل تفاصيل جمهورك أو مدينتك أو طريقة العمل عبر تيليجرام أو واتساب، وسيتم توجيهك إلى المسار المناسب.',
+          'أرسل تفاصيل جمهورك أو مدينتك أو طريقة العمل عبر تيليجرام أو البريد الإلكتروني، وسيتم توجيهك إلى المسار المناسب.',
         helperText:
           'نطاقات العمولات والشروط النهائية تحدد بعد مراجعة حجم الجمهور، المدينة، وسائل الدفع، وخطة التشغيل.',
         primaryCta: {
@@ -565,8 +573,8 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
             label: 'تواصل عبر تيليجرام',
           },
           {
-            ...messagingChannels.whatsapp,
-            label: 'تواصل عبر واتساب',
+            ...messagingChannels.email,
+            label: 'تواصل عبر البريد',
           },
         ],
       },
@@ -646,7 +654,7 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           },
           {
             question: 'كيف أبدأ بسرعة؟',
-            answer: 'راجع مسارك المناسب في صفحة الشراكة ثم استخدم تيليجرام أو واتساب في القسم الأخير لبدء المحادثة.',
+            answer: 'راجع مسارك المناسب في صفحة الشراكة ثم استخدم تيليجرام أو البريد الإلكتروني في القسم الأخير لبدء المحادثة.',
           },
         ],
       },
@@ -735,11 +743,13 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           'Start with match-day football, move into casino play, and pick up gifts, free spins, or free bets along the way. Sign up fast, switch sections easily, and play from mobile without slowing down.',
         primaryCta: {
           label: 'Start with Sports',
-          href: '#sports',
+          href: sportsLink,
+          external: true,
         },
         secondaryCta: {
           label: 'Explore Casino',
-          href: '#casino',
+          href: casinoBonusLink,
+          external: true,
         },
         highlights: ['Gifts', 'Free spins', 'Free bets', 'First deposit bonus up to 200%'],
         stats: [
@@ -979,11 +989,13 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           'Open sports for tonight’s fixtures, jump into casino play, or check the latest promo before you start.',
         primaryCta: {
           label: 'Go to Sports',
-          href: '#sports',
+          href: sportsLink,
+          external: true,
         },
         secondaryCta: {
           label: 'View Promos',
-          href: '#offers',
+          href: casinoBonusLink,
+          external: true,
         },
       },
     },
@@ -1203,7 +1215,7 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
         title: 'If you are ready to work as a partner or agent, choose your channel and move now.',
         highlightPhrases: ['partner', 'agent', 'move now'],
         description:
-          'Send your audience details, city coverage, or operating setup on Telegram or WhatsApp and the team will point you to the right route.',
+          'Send your audience details, city coverage, or operating setup on Telegram or email and the team will point you to the right route.',
         helperText:
           'Final terms and commission ranges are reviewed after checking audience size, city coverage, payment method, and operating plan.',
         primaryCta: {
@@ -1216,8 +1228,8 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
             label: 'Contact on Telegram',
           },
           {
-            ...messagingChannels.whatsapp,
-            label: 'Contact on WhatsApp',
+            ...messagingChannels.email,
+            label: 'Contact by Email',
           },
         ],
       },
@@ -1297,7 +1309,7 @@ const iraqContentByLocale: Record<Locale, MarketContent> = {
           },
           {
             question: 'How do I start quickly?',
-            answer: 'Review the routes on the partnership page, then use the Telegram or WhatsApp CTA at the end of the page to begin.',
+            answer: 'Review the routes on the partnership page, then use the Telegram or email CTA at the end of the page to begin.',
           },
         ],
       },

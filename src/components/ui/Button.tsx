@@ -10,6 +10,10 @@ type ButtonProps = {
   className?: string;
 };
 
+function isExternalLink(href: string) {
+  return href.startsWith('http') || href.startsWith('mailto:');
+}
+
 export function Button({
   href,
   children,
@@ -29,6 +33,8 @@ export function Button({
         className,
       )}
       href={href}
+      rel={isExternalLink(href) ? 'noreferrer' : undefined}
+      target={isExternalLink(href) ? '_blank' : undefined}
     >
       <span className="btn-base__label">{children}</span>
     </a>

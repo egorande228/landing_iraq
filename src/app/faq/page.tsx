@@ -64,7 +64,7 @@ export default async function FaqPage() {
                 <p className="body-lead mt-4 text-start">{faq.player.description}</p>
               </div>
               <SurfaceCard className="faq-group-card p-5 sm:p-6" data-hover="lift">
-                <CardMedia imageAlt={faq.player.title} imageSrc="/faq/players.png" tone="faq" variant="banner" />
+                <CardMedia imageAlt={faq.player.title} imageSrc="/faq/players.png" priority tone="faq" variant="banner" />
                 <div className="space-y-3">
                   {faq.player.items.map((item) => (
                     <FaqAccordion item={item} key={item.question} />

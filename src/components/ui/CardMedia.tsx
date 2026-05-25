@@ -21,6 +21,7 @@ type CardMediaProps = {
   videoSrc?: string;
   imageAlt?: string;
   sizes?: string;
+  priority?: boolean;
 };
 
 function getImageSizes(variant: NonNullable<CardMediaProps['variant']>) {
@@ -43,6 +44,7 @@ export function CardMedia({
   videoSrc,
   imageAlt = '',
   sizes,
+  priority = false,
 }: CardMediaProps) {
   const hasVisual = Boolean(imageSrc || videoSrc);
 
@@ -74,6 +76,7 @@ export function CardMedia({
             alt={imageAlt}
             className="card-media__image"
             fill
+            priority={priority}
             sizes={sizes ?? getImageSizes(variant)}
             src={imageSrc}
           />

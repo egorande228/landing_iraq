@@ -11,7 +11,7 @@ export type NavLink = LinkAction;
 
 export type ContactAction = LinkAction & {
   iconSrc?: string;
-  platform: 'telegram' | 'whatsapp';
+  platform: 'telegram' | 'email';
 };
 
 export type StatItem = {
