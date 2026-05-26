@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { HighlightedText } from '@/components/ui/HighlightedText';
 import { SurfaceCard } from '@/components/ui/SurfaceCard';
+import { emailLink, telegramLink } from '@/content/markets/iraq';
 
 type HomeHeroSectionProps = {
   hero: HeroContent;
@@ -53,6 +54,30 @@ export function HomeHeroSection({ hero }: HomeHeroSectionProps) {
                   {hero.secondaryCta.label}
                 </Button>
               ) : null}
+            </div>
+            <div
+              className="mt-5 w-full max-w-[360px] rounded-[18px] border border-white/10 bg-white/[0.04] p-3 shadow-[0_14px_36px_rgba(0,0,0,0.18)] backdrop-blur"
+              data-reveal
+            >
+              <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/48">
+                For partnership contact
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={telegramLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[42px] items-center justify-center rounded-[14px] border border-white/10 bg-white/[0.06] px-4 text-[14px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/[0.09]"
+                >
+                  Telegram
+                </a>
+                <a
+                  href={emailLink}
+                  className="inline-flex min-h-[42px] items-center justify-center rounded-[14px] border border-white/10 bg-white/[0.06] px-4 text-[14px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/[0.09]"
+                >
+                  Mail
+                </a>
+              </div>
             </div>
             <div className="hero-stats mt-6 grid gap-3 sm:grid-cols-3">
               {hero.stats.map((stat) => (

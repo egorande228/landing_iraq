@@ -3,8 +3,8 @@ import { getLocaleDirection, type Locale } from '@/lib/i18n';
 
 const sportsLink = 'https://refpa3665.com/L?tag=d_4092175m_66329c_IRAQSport';
 const casinoBonusLink = 'https://refpa3665.com/L?tag=d_4092175m_66329c_MLBIRAQ26';
-const telegramLink = 'https://t.me/Team_cash_iraq';
-const emailLink = 'mailto:PAYPARTNERS-MIDDLEAST@MELBET.COM';
+export const telegramLink = 'https://t.me/Team_cash_iraq';
+export const emailLink = 'mailto:PAYPARTNERS-MIDDLEAST@MELBET.COM';
 
 const messagingChannels = {
   telegram: {
