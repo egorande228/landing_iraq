@@ -1,0 +1,9 @@
+# MELBET العراق
+
+Canonical host: https://melbet-iraq.net/
+Primary language: ar
+
+Public pages:
+- Home: https://melbet-iraq.net/
+- FAQ: https://melbet-iraq.net/faq
+- Partnership: https://melbet-iraq.net/partnership
