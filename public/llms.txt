@@ -1,9 +1,10 @@
 # MELBET العراق
 
-Canonical host: https://melbet-iraq.net/
+Canonical host: https://www.melbet-iraq.net/
 Primary language: ar
+Site summary: Arabic-language landing for Iraq visitors with a homepage covering sports, casino, and offers, a FAQ page for players and partners, and a partnership page describing routes, tools, onboarding, and contact options.
 
 Public pages:
-- Home: https://melbet-iraq.net/
-- FAQ: https://melbet-iraq.net/faq
-- Partnership: https://melbet-iraq.net/partnership
+- Home: https://www.melbet-iraq.net/
+- FAQ: https://www.melbet-iraq.net/faq
+- Partnership: https://www.melbet-iraq.net/partnership
