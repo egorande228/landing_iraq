@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 function isExternalLink(href: string) {
-  return href.startsWith('http') || href.startsWith('mailto:');
+  return href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('/api/go/');
 }
 
 export function Button({
@@ -33,7 +33,7 @@ export function Button({
         className,
       )}
       href={href}
-      rel={isExternalLink(href) ? 'noreferrer' : undefined}
+      rel={href.startsWith('/api/go/') ? 'sponsored nofollow noopener' : isExternalLink(href) ? 'noreferrer' : undefined}
       target={isExternalLink(href) ? '_blank' : undefined}
     >
       <span className="btn-base__label">{children}</span>
